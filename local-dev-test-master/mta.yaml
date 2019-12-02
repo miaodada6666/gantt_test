@@ -1,0 +1,87 @@
+_schema-version: 2.0.0
+ID: local-dev-test
+version: 1.0.0
+modules:
+  - name: local-dev-test-srv
+    type: java
+    path: srv
+    parameters:
+      # memory: 512M
+      memory: 1024M
+    provides:
+      - name: srv_api
+        properties:
+          url: ${default-url}
+    properties:
+      ALLOW_MOCKED_AUTH_HEADER: true
+    requires:
+      - name: local-dev-test-db-hdi-container
+        properties:
+          JBP_CONFIG_RESOURCE_CONFIGURATION:
+            '[tomcat/webapps/ROOT/META-INF/context.xml:{"service_name_for_DefaultDB" : "~{hdi-container-name}"}]'
+      - name: local-dev-test-uaa
+      - name: local-dev-test-dest
+  - name: local-dev-test-db
+    type: hdb
+    path: db
+    parameters:
+      memory: 256M
+      disk-quota: 256M
+    requires:
+      - name: local-dev-test-db-hdi-container
+
+  - name: app
+    type: html5
+    path: app
+    parameters:
+      disk-quota: 256M
+      memory: 256M
+    build-parameters:
+      builder: grunt
+    requires:
+      - name: srv_api
+        group: destinations
+        properties:
+          forwardAuthToken: true
+          strictSSL: false
+          name: srv_api
+          url: ~{url}
+      - name: local-dev-test-uaa
+
+
+  - name: app_EE
+    type: html5
+    path: app_EE
+    parameters:
+       disk-quota: 256M
+       memory: 256M
+    build-parameters:
+       builder: grunt
+    requires:
+     - name: srv_api
+       group: destinations
+       properties:
+          forwardAuthToken: true
+          strictSSL: false
+          name: srv_api
+          url: ~{url}
+     - name: local-dev-test-uaa
+
+resources:
+  - name: local-dev-test-uaa
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service-plan: application
+      service: xsuaa
+      config:
+        xsappname: local-dev-test-${space}
+        tenant-mode: dedicated
+  - name: local-dev-test-db-hdi-container
+    type: com.sap.xs.hdi-container
+    properties:
+      hdi-container-name: ${service-name}
+  - name: local-dev-test-dest
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: destination
+      service-plan: lite

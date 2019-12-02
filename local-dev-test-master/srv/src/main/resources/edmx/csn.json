@@ -1,0 +1,3296 @@
+{
+  "definitions": {
+    "API_ENTERPRISE_PROJECT_SRV.A_EntProjectElementJVAType": {
+      "kind": "entity",
+      "@cds.persistence.name": "API_ENTERPRISE_PROJECT_SRV_A_ENTPROJECTELEMENTJVATYPE",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "ProjectElementUUID": {
+          "@cds.persistence.name": "PROJECTELEMENTUUID",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "ProjectUUID": {
+          "@cds.persistence.name": "PROJECTUUID",
+          "type": "cds.UUID"
+        },
+        "JointVenture": {
+          "@cds.persistence.name": "JOINTVENTURE",
+          "type": "cds.String",
+          "length": 6
+        },
+        "JointVentureCostRecoveryCode": {
+          "@cds.persistence.name": "JOINTVENTURECOSTRECOVERYCODE",
+          "type": "cds.String",
+          "length": 2
+        },
+        "JointVentureEquityType": {
+          "@cds.persistence.name": "JOINTVENTUREEQUITYTYPE",
+          "type": "cds.String",
+          "length": 3
+        },
+        "JntVntrProjectType": {
+          "@cds.persistence.name": "JNTVNTRPROJECTTYPE",
+          "type": "cds.String",
+          "length": 4
+        },
+        "JntIntrstBillgClass": {
+          "@cds.persistence.name": "JNTINTRSTBILLGCLASS",
+          "type": "cds.String",
+          "length": 3
+        },
+        "JntIntrstBillgSubClass": {
+          "@cds.persistence.name": "JNTINTRSTBILLGSUBCLASS",
+          "type": "cds.String",
+          "length": 5
+        },
+        "ProjectLastChangedDateTime": {
+          "@cds.persistence.name": "PROJECTLASTCHANGEDDATETIME",
+          "type": "cds.Timestamp"
+        }
+      }
+    },
+    "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectElementType": {
+      "kind": "entity",
+      "@cds.persistence.name": "API_ENTERPRISE_PROJECT_SRV_A_ENTERPRISEPROJECTELEMENTTYPE",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "ProjectElementUUID": {
+          "@cds.persistence.name": "PROJECTELEMENTUUID",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "ProjectElement": {
+          "@cds.persistence.name": "PROJECTELEMENT",
+          "type": "cds.String",
+          "length": 24
+        },
+        "WBSElementInternalID": {
+          "@cds.persistence.name": "WBSELEMENTINTERNALID",
+          "type": "cds.String",
+          "length": 8
+        },
+        "ProjectUUID": {
+          "@cds.persistence.name": "PROJECTUUID",
+          "type": "cds.UUID"
+        },
+        "ProjectElementDescription": {
+          "@cds.persistence.name": "PROJECTELEMENTDESCRIPTION",
+          "type": "cds.String",
+          "length": 40
+        },
+        "ParentObjectUUID": {
+          "@cds.persistence.name": "PARENTOBJECTUUID",
+          "type": "cds.UUID"
+        },
+        "ProcessingStatus": {
+          "@cds.persistence.name": "PROCESSINGSTATUS",
+          "type": "cds.String",
+          "length": 2
+        },
+        "SortingNumber": {
+          "@cds.persistence.name": "SORTINGNUMBER",
+          "type": "cds.String",
+          "length": 5
+        },
+        "PlannedStartDate": {
+          "@cds.persistence.name": "PLANNEDSTARTDATE",
+          "type": "cds.Date"
+        },
+        "PlannedEndDate": {
+          "@cds.persistence.name": "PLANNEDENDDATE",
+          "type": "cds.Date"
+        },
+        "ResponsibleCostCenter": {
+          "@cds.persistence.name": "RESPONSIBLECOSTCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "CompanyCode": {
+          "@cds.persistence.name": "COMPANYCODE",
+          "type": "cds.String",
+          "length": 4
+        },
+        "ProfitCenter": {
+          "@cds.persistence.name": "PROFITCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "FunctionalArea": {
+          "@cds.persistence.name": "FUNCTIONALAREA",
+          "type": "cds.String",
+          "length": 16
+        },
+        "ControllingArea": {
+          "@cds.persistence.name": "CONTROLLINGAREA",
+          "type": "cds.String",
+          "length": 4
+        },
+        "Plant": {
+          "@cds.persistence.name": "PLANT",
+          "type": "cds.String",
+          "length": 4
+        },
+        "Location": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 10
+        },
+        "FactoryCalendar": {
+          "@cds.persistence.name": "FACTORYCALENDAR",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CostingSheet": {
+          "@cds.persistence.name": "COSTINGSHEET",
+          "type": "cds.String",
+          "length": 6
+        },
+        "InvestmentProfile": {
+          "@cds.persistence.name": "INVESTMENTPROFILE",
+          "type": "cds.String",
+          "length": 6
+        },
+        "WBSIsStatisticalWBSElement": {
+          "@cds.persistence.name": "WBSISSTATISTICALWBSELEMENT",
+          "type": "cds.Boolean"
+        },
+        "CostCenter": {
+          "@cds.persistence.name": "COSTCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "CreatedByUser": {
+          "@cds.persistence.name": "CREATEDBYUSER",
+          "type": "cds.String",
+          "length": 12
+        },
+        "CreationDateTime": {
+          "@cds.persistence.name": "CREATIONDATETIME",
+          "type": "cds.Timestamp"
+        },
+        "LastChangeDateTime": {
+          "@cds.persistence.name": "LASTCHANGEDATETIME",
+          "type": "cds.Timestamp"
+        },
+        "LastChangedByUser": {
+          "@cds.persistence.name": "LASTCHANGEDBYUSER",
+          "type": "cds.String",
+          "length": 12
+        },
+        "ProjectLastChangedDateTime": {
+          "@cds.persistence.name": "PROJECTLASTCHANGEDDATETIME",
+          "type": "cds.Timestamp"
+        },
+        "to_EnterpriseProject": {
+          "@cds.persistence.name": "TO_ENTERPRISEPROJECT",
+          "type": "cds.Association",
+          "target": "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectType",
+          "keys": [
+            {
+              "ref": [
+                "ProjectUUID"
+              ],
+              "$generatedFieldName": "to_EnterpriseProject_ProjectUUID"
+            }
+          ]
+        },
+        "to_EntProjectElementJVA": {
+          "@cds.persistence.name": "TO_ENTPROJECTELEMENTJVA",
+          "type": "cds.Association",
+          "target": "API_ENTERPRISE_PROJECT_SRV.A_EntProjectElementJVAType",
+          "keys": [
+            {
+              "ref": [
+                "ProjectElementUUID"
+              ],
+              "$generatedFieldName": "to_EntProjectElementJVA_ProjectElementUUID"
+            }
+          ]
+        },
+        "to_ParentProjElement": {
+          "@cds.persistence.name": "TO_PARENTPROJELEMENT",
+          "type": "cds.Association",
+          "target": "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectElementType",
+          "keys": [
+            {
+              "ref": [
+                "ProjectElementUUID"
+              ],
+              "$generatedFieldName": "to_ParentProjElement_ProjectElementUUID"
+            }
+          ]
+        },
+        "to_SubProjElement": {
+          "@cds.persistence.name": "TO_SUBPROJELEMENT",
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectElementType",
+          "keys": [
+            {
+              "ref": [
+                "ProjectElementUUID"
+              ],
+              "$generatedFieldName": "to_SubProjElement_ProjectElementUUID"
+            }
+          ]
+        },
+        "to_EnterpriseProject_ProjectUUID": {
+          "@cds.persistence.name": "TO_ENTERPRISEPROJECT_PROJECTUUID",
+          "@odata.foreignKey4": "to_EnterpriseProject",
+          "type": "cds.UUID"
+        },
+        "to_EntProjectElementJVA_ProjectElementUUID": {
+          "@cds.persistence.name": "TO_ENTPROJECTELEMENTJVA_PROJECTELEMENTUUID",
+          "@odata.foreignKey4": "to_EntProjectElementJVA",
+          "type": "cds.UUID"
+        },
+        "to_ParentProjElement_ProjectElementUUID": {
+          "@cds.persistence.name": "TO_PARENTPROJELEMENT_PROJECTELEMENTUUID",
+          "@odata.foreignKey4": "to_ParentProjElement",
+          "type": "cds.UUID"
+        },
+        "to_SubProjElement_ProjectElementUUID": {
+          "@cds.persistence.name": "TO_SUBPROJELEMENT_PROJECTELEMENTUUID",
+          "@odata.foreignKey4": "to_SubProjElement",
+          "type": "cds.UUID"
+        }
+      }
+    },
+    "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectJVAType": {
+      "kind": "entity",
+      "@cds.persistence.name": "API_ENTERPRISE_PROJECT_SRV_A_ENTERPRISEPROJECTJVATYPE",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "ProjectUUID": {
+          "@cds.persistence.name": "PROJECTUUID",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "JointVenture": {
+          "@cds.persistence.name": "JOINTVENTURE",
+          "type": "cds.String",
+          "length": 6
+        },
+        "JointVentureCostRecoveryCode": {
+          "@cds.persistence.name": "JOINTVENTURECOSTRECOVERYCODE",
+          "type": "cds.String",
+          "length": 2
+        },
+        "JointVentureEquityType": {
+          "@cds.persistence.name": "JOINTVENTUREEQUITYTYPE",
+          "type": "cds.String",
+          "length": 3
+        },
+        "JntVntrProjectType": {
+          "@cds.persistence.name": "JNTVNTRPROJECTTYPE",
+          "type": "cds.String",
+          "length": 4
+        },
+        "JntIntrstBillgClass": {
+          "@cds.persistence.name": "JNTINTRSTBILLGCLASS",
+          "type": "cds.String",
+          "length": 3
+        },
+        "JntIntrstBillgSubClass": {
+          "@cds.persistence.name": "JNTINTRSTBILLGSUBCLASS",
+          "type": "cds.String",
+          "length": 5
+        },
+        "ProjectLastChangedDateTime": {
+          "@cds.persistence.name": "PROJECTLASTCHANGEDDATETIME",
+          "type": "cds.Timestamp"
+        }
+      }
+    },
+    "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectType": {
+      "kind": "entity",
+      "@cds.persistence.name": "API_ENTERPRISE_PROJECT_SRV_A_ENTERPRISEPROJECTTYPE",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "ProjectUUID": {
+          "@cds.persistence.name": "PROJECTUUID",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "ProjectInternalID": {
+          "@cds.persistence.name": "PROJECTINTERNALID",
+          "type": "cds.String",
+          "length": 24
+        },
+        "Project": {
+          "@cds.persistence.name": "PROJECT",
+          "type": "cds.String",
+          "length": 24
+        },
+        "ProjectDescription": {
+          "@cds.persistence.name": "PROJECTDESCRIPTION",
+          "type": "cds.String",
+          "length": 40
+        },
+        "EnterpriseProjectType": {
+          "@cds.persistence.name": "ENTERPRISEPROJECTTYPE",
+          "type": "cds.String",
+          "length": 2
+        },
+        "PriorityCode": {
+          "@cds.persistence.name": "PRIORITYCODE",
+          "type": "cds.String",
+          "length": 3
+        },
+        "ProjectStartDate": {
+          "@cds.persistence.name": "PROJECTSTARTDATE",
+          "type": "cds.Date"
+        },
+        "ProjectEndDate": {
+          "@cds.persistence.name": "PROJECTENDDATE",
+          "type": "cds.Date"
+        },
+        "ProcessingStatus": {
+          "@cds.persistence.name": "PROCESSINGSTATUS",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ResponsibleCostCenter": {
+          "@cds.persistence.name": "RESPONSIBLECOSTCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "ProfitCenter": {
+          "@cds.persistence.name": "PROFITCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "ProjectManagerUUID": {
+          "@cds.persistence.name": "PROJECTMANAGERUUID",
+          "type": "cds.UUID"
+        },
+        "ProjectProfileCode": {
+          "@cds.persistence.name": "PROJECTPROFILECODE",
+          "type": "cds.String",
+          "length": 7
+        },
+        "FunctionalArea": {
+          "@cds.persistence.name": "FUNCTIONALAREA",
+          "type": "cds.String",
+          "length": 16
+        },
+        "CompanyCode": {
+          "@cds.persistence.name": "COMPANYCODE",
+          "type": "cds.String",
+          "length": 4
+        },
+        "ControllingArea": {
+          "@cds.persistence.name": "CONTROLLINGAREA",
+          "type": "cds.String",
+          "length": 4
+        },
+        "Plant": {
+          "@cds.persistence.name": "PLANT",
+          "type": "cds.String",
+          "length": 4
+        },
+        "Location": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 10
+        },
+        "LastChangeDateTime": {
+          "@cds.persistence.name": "LASTCHANGEDATETIME",
+          "type": "cds.Timestamp"
+        },
+        "to_EnterpriseProjectElement": {
+          "@cds.persistence.name": "TO_ENTERPRISEPROJECTELEMENT",
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectElementType",
+          "on": [
+            {
+              "ref": [
+                "to_EnterpriseProjectElement",
+                "ProjectUUID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ProjectUUID"
+              ]
+            }
+          ]
+        },
+        "to_EnterpriseProjectJVA": {
+          "@cds.persistence.name": "TO_ENTERPRISEPROJECTJVA",
+          "type": "cds.Association",
+          "target": "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectJVAType",
+          "keys": [
+            {
+              "ref": [
+                "ProjectUUID"
+              ],
+              "$generatedFieldName": "to_EnterpriseProjectJVA_ProjectUUID"
+            }
+          ]
+        },
+        "to_EnterpriseProjectJVA_ProjectUUID": {
+          "@cds.persistence.name": "TO_ENTERPRISEPROJECTJVA_PROJECTUUID",
+          "@odata.foreignKey4": "to_EnterpriseProjectJVA",
+          "type": "cds.UUID"
+        }
+      }
+    },
+    "CatalogService": {
+      "kind": "service"
+    },
+    "CatalogService.Authors": {
+      "kind": "entity",
+      "@cds.persistence.name": "CATALOGSERVICE_AUTHORS",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "my.bookshop.Authors"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "name": {
+          "@Common.Label": "Author",
+          "@cds.persistence.name": "NAME",
+          "type": "cds.String"
+        },
+        "books": {
+          "@cds.persistence.name": "BOOKS",
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "CatalogService.Books",
+          "on": [
+            {
+              "ref": [
+                "books",
+                "author"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      },
+      "$syntax": "projection"
+    },
+    "CatalogService.Books": {
+      "kind": "entity",
+      "@UI.Facets": [
+        {
+          "$Type": "UI.CollectionFacet",
+          "Facets": [
+            {
+              "$Type": "UI.ReferenceFacet",
+              "Label": "General Info",
+              "Target": "@UI.Identification"
+            }
+          ],
+          "Label": "Book Details"
+        },
+        {
+          "$Type": "UI.ReferenceFacet",
+          "Label": "Orders",
+          "Target": "orders/@UI.LineItem"
+        }
+      ],
+      "@UI.HeaderInfo.Title.Value": {
+        "=": "title"
+      },
+      "@UI.HeaderInfo.TypeName": "Book",
+      "@UI.HeaderInfo.TypeNamePlural": "Books",
+      "@UI.Identification": [
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "ID"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "title"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "author/name"
+          }
+        },
+        {
+          "$Type": "UI.DataFieldForAction",
+          "Label": "Set to use",
+          "Action": "CatalogService/set2use"
+        }
+      ],
+      "@UI.LineItem": [
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "ID"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "title"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "stock"
+          }
+        }
+      ],
+      "@cds.persistence.name": "CATALOGSERVICE_BOOKS",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "my.bookshop.Books"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "ID": {
+          "@Common.Label": "Id",
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "title": {
+          "@Common.Label": "Title",
+          "@cds.persistence.name": "TITLE",
+          "localized": true,
+          "type": "cds.String"
+        },
+        "author": {
+          "@Common.Label": "Author",
+          "@Common.Text": {
+            "=": "author/name"
+          },
+          "@Common.ValueList.CollectionPath": "Authors",
+          "@Common.ValueList.Label": "Authors",
+          "@Common.ValueList.Parameters": [
+            {
+              "$Type": "Common.ValueListParameterOut",
+              "LocalDataProperty": "author_ID",
+              "ValueListProperty": "ID"
+            },
+            {
+              "$Type": "Common.ValueListParameterDisplayOnly",
+              "ValueListProperty": "name"
+            }
+          ],
+          "@Common.ValueList.SearchSupported": "true",
+          "@cds.persistence.name": "AUTHOR",
+          "@sap.value.list": "fixed-values",
+          "type": "cds.Association",
+          "target": "CatalogService.Authors",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ],
+              "$generatedFieldName": "author_ID"
+            }
+          ]
+        },
+        "stock": {
+          "@Common.Label": "Stock",
+          "@cds.persistence.name": "STOCK",
+          "type": "cds.Integer"
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "CatalogService.Books_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "ID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "CatalogService.Books_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "ID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ID"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        },
+        "author_ID": {
+          "@Common.Label": "Author",
+          "@Common.Text": {
+            "=": "author/name"
+          },
+          "@Common.ValueList.CollectionPath": "Authors",
+          "@Common.ValueList.Label": "Authors",
+          "@Common.ValueList.Parameters": [
+            {
+              "$Type": "Common.ValueListParameterOut",
+              "LocalDataProperty": "author_ID",
+              "ValueListProperty": "ID"
+            },
+            {
+              "$Type": "Common.ValueListParameterDisplayOnly",
+              "ValueListProperty": "name"
+            }
+          ],
+          "@Common.ValueList.SearchSupported": "true",
+          "@cds.persistence.name": "AUTHOR_ID",
+          "@odata.foreignKey4": "author",
+          "@sap.value.list": "fixed-values",
+          "type": "cds.Integer"
+        }
+      },
+      "$syntax": "projection"
+    },
+    "CatalogService.Books_texts": {
+      "kind": "entity",
+      "@cds.autoexpose": true,
+      "@cds.autoexposed": true,
+      "@cds.persistence.name": "CATALOGSERVICE_BOOKS_TEXTS",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "my.bookshop.Books_texts"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "locale": {
+          "@cds.persistence.name": "LOCALE",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "title": {
+          "@cds.persistence.name": "TITLE",
+          "localized": false,
+          "type": "cds.String"
+        }
+      }
+    },
+    "CatalogService.Countries": {
+      "kind": "entity",
+      "@UI.Identification": [
+        {
+          "=": "name"
+        }
+      ],
+      "@cds.autoexpose": true,
+      "@cds.autoexposed": true,
+      "@cds.odata.valuelist": true,
+      "@cds.persistence.name": "CATALOGSERVICE_COUNTRIES",
+      "@cds.persistence.skip": "if-unused",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "sap.common.Countries"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@cds.persistence.name": "NAME",
+          "localized": true,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@cds.persistence.name": "DESCR",
+          "localized": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 3
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "CatalogService.Countries_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "CatalogService.Countries_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "CatalogService.Countries_texts": {
+      "kind": "entity",
+      "@cds.autoexpose": true,
+      "@cds.autoexposed": true,
+      "@cds.persistence.name": "CATALOGSERVICE_COUNTRIES_TEXTS",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "sap.common.Countries_texts"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "locale": {
+          "@cds.persistence.name": "LOCALE",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@cds.persistence.name": "NAME",
+          "localized": false,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@cds.persistence.name": "DESCR",
+          "localized": false,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 3
+        }
+      }
+    },
+    "CatalogService.Orders": {
+      "kind": "entity",
+      "@UI.Facets": [
+        {
+          "$Type": "UI.CollectionFacet",
+          "Facets": [
+            {
+              "$Type": "UI.ReferenceFacet",
+              "Label": "Assignment",
+              "Target": "@UI.Identification"
+            }
+          ],
+          "Label": "Orders"
+        }
+      ],
+      "@UI.HeaderInfo.Title.Value": {
+        "=": "ID"
+      },
+      "@UI.HeaderInfo.TypeName": "Order",
+      "@UI.HeaderInfo.TypeNamePlural": "Orders",
+      "@UI.Identification": [
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "ID"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "book"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "buyer"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "date"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "amount"
+          }
+        }
+      ],
+      "@UI.LineItem": [
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "ID"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "book"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "buyer"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "date"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Value": {
+            "=": "amount"
+          }
+        }
+      ],
+      "@cds.persistence.name": "CATALOGSERVICE_ORDERS",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "my.bookshop.Orders"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "modifiedAt": {
+          "@Common.Label": "{i18n>ChangedAt}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.update": {
+            "=": "$now"
+          },
+          "@cds.persistence.name": "MODIFIEDAT",
+          "@odata.etag": true,
+          "@odata.on.update": {
+            "#": "now"
+          },
+          "type": "cds.DateTime"
+        },
+        "createdAt": {
+          "@Common.FieldControl": {
+            "#": "ReadOnly"
+          },
+          "@Common.Label": "Date",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.insert": {
+            "=": "$now"
+          },
+          "@cds.persistence.name": "CREATEDAT",
+          "@odata.on.insert": {
+            "#": "now"
+          },
+          "type": "cds.DateTime"
+        },
+        "createdBy": {
+          "@Common.FieldControl": {
+            "#": "ReadOnly"
+          },
+          "@Common.Label": "Buyer",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.insert": {
+            "=": "$user"
+          },
+          "@cds.persistence.name": "CREATEDBY",
+          "@description": "{i18n>UserID.Description}",
+          "@odata.on.insert": {
+            "#": "user"
+          },
+          "type": "cds.String",
+          "length": 255
+        },
+        "modifiedBy": {
+          "@Common.Label": "{i18n>ChangedBy}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.update": {
+            "=": "$user"
+          },
+          "@cds.persistence.name": "MODIFIEDBY",
+          "@description": "{i18n>UserID.Description}",
+          "@odata.on.update": {
+            "#": "user"
+          },
+          "type": "cds.String",
+          "length": 255
+        },
+        "ID": {
+          "@Common.FieldControl": {
+            "#": "ReadOnly"
+          },
+          "@Common.Label": "Order",
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "book": {
+          "@Common.FieldControl": {
+            "#": "ReadOnly"
+          },
+          "@Common.Label": "Book",
+          "@cds.persistence.name": "BOOK",
+          "type": "cds.Association",
+          "target": "CatalogService.Books",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ],
+              "$generatedFieldName": "book_ID"
+            }
+          ]
+        },
+        "country": {
+          "@Common.Label": "{i18n>Country}",
+          "@Common.ValueList.viaAssociation": {
+            "=": "country"
+          },
+          "@cds.persistence.name": "COUNTRY",
+          "@description": "{i18n>CountryCode.Description}",
+          "type": "cds.Association",
+          "target": "CatalogService.Countries",
+          "keys": [
+            {
+              "ref": [
+                "code"
+              ],
+              "$generatedFieldName": "country_code"
+            }
+          ]
+        },
+        "amount": {
+          "@Common.FieldControl": {
+            "#": "ReadOnly"
+          },
+          "@Common.Label": "Amount",
+          "@cds.persistence.name": "AMOUNT",
+          "type": "cds.Integer"
+        },
+        "book_ID": {
+          "@Common.FieldControl": {
+            "#": "ReadOnly"
+          },
+          "@Common.Label": "Book",
+          "@cds.persistence.name": "BOOK_ID",
+          "@odata.foreignKey4": "book",
+          "type": "cds.Integer"
+        },
+        "country_code": {
+          "@Common.Label": "{i18n>Country}",
+          "@cds.persistence.name": "COUNTRY_CODE",
+          "@description": "{i18n>CountryCode.Description}",
+          "@odata.foreignKey4": "country",
+          "type": "cds.String",
+          "length": 3
+        }
+      },
+      "$syntax": "projection"
+    },
+    "CatalogService.ProjectEE": {
+      "kind": "entity",
+      "@cds.persistence.name": "CATALOGSERVICE_PROJECTEE",
+      "@cds.persistence.skip": true,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectType"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "ProjectUUID": {
+          "@cds.persistence.name": "PROJECTUUID",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "ProjectInternalID": {
+          "@cds.persistence.name": "PROJECTINTERNALID",
+          "type": "cds.String",
+          "length": 24
+        },
+        "Project": {
+          "@cds.persistence.name": "PROJECT",
+          "type": "cds.String",
+          "length": 24
+        },
+        "ProjectDescription": {
+          "@cds.persistence.name": "PROJECTDESCRIPTION",
+          "type": "cds.String",
+          "length": 40
+        },
+        "EnterpriseProjectType": {
+          "@cds.persistence.name": "ENTERPRISEPROJECTTYPE",
+          "type": "cds.String",
+          "length": 2
+        },
+        "PriorityCode": {
+          "@cds.persistence.name": "PRIORITYCODE",
+          "type": "cds.String",
+          "length": 3
+        },
+        "ProjectStartDate": {
+          "@cds.persistence.name": "PROJECTSTARTDATE",
+          "type": "cds.Date"
+        },
+        "ProjectEndDate": {
+          "@cds.persistence.name": "PROJECTENDDATE",
+          "type": "cds.Date"
+        },
+        "ProcessingStatus": {
+          "@cds.persistence.name": "PROCESSINGSTATUS",
+          "type": "cds.String",
+          "length": 2
+        },
+        "ResponsibleCostCenter": {
+          "@cds.persistence.name": "RESPONSIBLECOSTCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "ProfitCenter": {
+          "@cds.persistence.name": "PROFITCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "ProjectManagerUUID": {
+          "@cds.persistence.name": "PROJECTMANAGERUUID",
+          "type": "cds.UUID"
+        },
+        "ProjectProfileCode": {
+          "@cds.persistence.name": "PROJECTPROFILECODE",
+          "type": "cds.String",
+          "length": 7
+        },
+        "FunctionalArea": {
+          "@cds.persistence.name": "FUNCTIONALAREA",
+          "type": "cds.String",
+          "length": 16
+        },
+        "CompanyCode": {
+          "@cds.persistence.name": "COMPANYCODE",
+          "type": "cds.String",
+          "length": 4
+        },
+        "ControllingArea": {
+          "@cds.persistence.name": "CONTROLLINGAREA",
+          "type": "cds.String",
+          "length": 4
+        },
+        "Plant": {
+          "@cds.persistence.name": "PLANT",
+          "type": "cds.String",
+          "length": 4
+        },
+        "Location": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 10
+        },
+        "LastChangeDateTime": {
+          "@cds.persistence.name": "LASTCHANGEDATETIME",
+          "type": "cds.Timestamp"
+        },
+        "to_EnterpriseProjectElement": {
+          "@cds.persistence.name": "TO_ENTERPRISEPROJECTELEMENT",
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "CatalogService.ProjectElementEE",
+          "on": [
+            {
+              "ref": [
+                "to_EnterpriseProjectElement",
+                "ProjectUUID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ProjectUUID"
+              ]
+            }
+          ]
+        }
+      },
+      "$syntax": "entity"
+    },
+    "CatalogService.ProjectElementEE": {
+      "kind": "entity",
+      "@cds.persistence.name": "CATALOGSERVICE_PROJECTELEMENTEE",
+      "@cds.persistence.skip": true,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "API_ENTERPRISE_PROJECT_SRV.A_EnterpriseProjectElementType"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "ProjectElementUUID": {
+          "@cds.persistence.name": "PROJECTELEMENTUUID",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "ProjectElement": {
+          "@cds.persistence.name": "PROJECTELEMENT",
+          "type": "cds.String",
+          "length": 24
+        },
+        "WBSElementInternalID": {
+          "@cds.persistence.name": "WBSELEMENTINTERNALID",
+          "type": "cds.String",
+          "length": 8
+        },
+        "ProjectUUID": {
+          "@cds.persistence.name": "PROJECTUUID",
+          "type": "cds.UUID"
+        },
+        "ProjectElementDescription": {
+          "@cds.persistence.name": "PROJECTELEMENTDESCRIPTION",
+          "type": "cds.String",
+          "length": 40
+        },
+        "ParentObjectUUID": {
+          "@cds.persistence.name": "PARENTOBJECTUUID",
+          "type": "cds.UUID"
+        },
+        "ProcessingStatus": {
+          "@cds.persistence.name": "PROCESSINGSTATUS",
+          "type": "cds.String",
+          "length": 2
+        },
+        "SortingNumber": {
+          "@cds.persistence.name": "SORTINGNUMBER",
+          "type": "cds.String",
+          "length": 5
+        },
+        "PlannedStartDate": {
+          "@cds.persistence.name": "PLANNEDSTARTDATE",
+          "type": "cds.Date"
+        },
+        "PlannedEndDate": {
+          "@cds.persistence.name": "PLANNEDENDDATE",
+          "type": "cds.Date"
+        },
+        "ResponsibleCostCenter": {
+          "@cds.persistence.name": "RESPONSIBLECOSTCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "CompanyCode": {
+          "@cds.persistence.name": "COMPANYCODE",
+          "type": "cds.String",
+          "length": 4
+        },
+        "ProfitCenter": {
+          "@cds.persistence.name": "PROFITCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "FunctionalArea": {
+          "@cds.persistence.name": "FUNCTIONALAREA",
+          "type": "cds.String",
+          "length": 16
+        },
+        "ControllingArea": {
+          "@cds.persistence.name": "CONTROLLINGAREA",
+          "type": "cds.String",
+          "length": 4
+        },
+        "Plant": {
+          "@cds.persistence.name": "PLANT",
+          "type": "cds.String",
+          "length": 4
+        },
+        "Location": {
+          "@cds.persistence.name": "LOCATION",
+          "type": "cds.String",
+          "length": 10
+        },
+        "FactoryCalendar": {
+          "@cds.persistence.name": "FACTORYCALENDAR",
+          "type": "cds.String",
+          "length": 2
+        },
+        "CostingSheet": {
+          "@cds.persistence.name": "COSTINGSHEET",
+          "type": "cds.String",
+          "length": 6
+        },
+        "InvestmentProfile": {
+          "@cds.persistence.name": "INVESTMENTPROFILE",
+          "type": "cds.String",
+          "length": 6
+        },
+        "WBSIsStatisticalWBSElement": {
+          "@cds.persistence.name": "WBSISSTATISTICALWBSELEMENT",
+          "type": "cds.Boolean"
+        },
+        "CostCenter": {
+          "@cds.persistence.name": "COSTCENTER",
+          "type": "cds.String",
+          "length": 10
+        },
+        "CreatedByUser": {
+          "@cds.persistence.name": "CREATEDBYUSER",
+          "type": "cds.String",
+          "length": 12
+        },
+        "CreationDateTime": {
+          "@cds.persistence.name": "CREATIONDATETIME",
+          "type": "cds.Timestamp"
+        },
+        "LastChangeDateTime": {
+          "@cds.persistence.name": "LASTCHANGEDATETIME",
+          "type": "cds.Timestamp"
+        },
+        "LastChangedByUser": {
+          "@cds.persistence.name": "LASTCHANGEDBYUSER",
+          "type": "cds.String",
+          "length": 12
+        },
+        "ProjectLastChangedDateTime": {
+          "@cds.persistence.name": "PROJECTLASTCHANGEDDATETIME",
+          "type": "cds.Timestamp"
+        },
+        "to_EnterpriseProject": {
+          "@cds.persistence.name": "TO_ENTERPRISEPROJECT",
+          "type": "cds.Association",
+          "target": "CatalogService.ProjectEE",
+          "keys": [
+            {
+              "ref": [
+                "ProjectUUID"
+              ],
+              "$generatedFieldName": "to_EnterpriseProject_ProjectUUID"
+            }
+          ]
+        },
+        "to_ParentProjElement": {
+          "@cds.persistence.name": "TO_PARENTPROJELEMENT",
+          "type": "cds.Association",
+          "target": "CatalogService.ProjectElementEE",
+          "keys": [
+            {
+              "ref": [
+                "ProjectElementUUID"
+              ],
+              "$generatedFieldName": "to_ParentProjElement_ProjectElementUUID"
+            }
+          ]
+        },
+        "to_SubProjElement": {
+          "@cds.persistence.name": "TO_SUBPROJELEMENT",
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "CatalogService.ProjectElementEE",
+          "keys": [
+            {
+              "ref": [
+                "ProjectElementUUID"
+              ],
+              "$generatedFieldName": "to_SubProjElement_ProjectElementUUID"
+            }
+          ]
+        },
+        "to_EnterpriseProject_ProjectUUID": {
+          "@cds.persistence.name": "TO_ENTERPRISEPROJECT_PROJECTUUID",
+          "@odata.foreignKey4": "to_EnterpriseProject",
+          "type": "cds.UUID"
+        },
+        "to_ParentProjElement_ProjectElementUUID": {
+          "@cds.persistence.name": "TO_PARENTPROJELEMENT_PROJECTELEMENTUUID",
+          "@odata.foreignKey4": "to_ParentProjElement",
+          "type": "cds.UUID"
+        },
+        "to_SubProjElement_ProjectElementUUID": {
+          "@cds.persistence.name": "TO_SUBPROJELEMENT_PROJECTELEMENTUUID",
+          "@odata.foreignKey4": "to_SubProjElement",
+          "type": "cds.UUID"
+        }
+      },
+      "$syntax": "entity"
+    },
+    "CatalogService.set2use": {
+      "kind": "action",
+      "params": {
+        "bookId": {
+          "kind": "param",
+          "@cds.persistence.name": "BOOKID",
+          "type": "cds.Integer"
+        },
+        "state": {
+          "kind": "param",
+          "@cds.persistence.name": "STATE",
+          "type": "cds.Integer"
+        }
+      }
+    },
+    "Country": {
+      "kind": "type",
+      "@Common.Label": "{i18n>Country}",
+      "@cds.persistence.name": "COUNTRY",
+      "@description": "{i18n>CountryCode.Description}",
+      "type": "cds.Association",
+      "target": "sap.common.Countries",
+      "keys": [
+        {
+          "ref": [
+            "code"
+          ]
+        }
+      ]
+    },
+    "Currency": {
+      "kind": "type",
+      "@Common.Label": "{i18n>Currency}",
+      "@cds.persistence.name": "CURRENCY",
+      "@description": "{i18n>CurrencyCode.Description}",
+      "type": "cds.Association",
+      "target": "sap.common.Currencies",
+      "keys": [
+        {
+          "ref": [
+            "code"
+          ]
+        }
+      ]
+    },
+    "Language": {
+      "kind": "type",
+      "@Common.Label": "{i18n>Language}",
+      "@cds.persistence.name": "LANGUAGE",
+      "@description": "{i18n>LanguageCode.Description}",
+      "type": "cds.Association",
+      "target": "sap.common.Languages",
+      "keys": [
+        {
+          "ref": [
+            "code"
+          ]
+        }
+      ]
+    },
+    "User": {
+      "kind": "type",
+      "@Common.Label": "{i18n>UserID}",
+      "@cds.persistence.name": "USER",
+      "@description": "{i18n>UserID.Description}",
+      "type": "cds.String",
+      "length": 255
+    },
+    "cuid": {
+      "kind": "entity",
+      "@cds.persistence.name": "CUID",
+      "abstract": true,
+      "elements": {
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.UUID"
+        }
+      }
+    },
+    "localized.CatalogService.Books": {
+      "kind": "entity",
+      "@cds.persistence.name": "LOCALIZED_CATALOGSERVICE_BOOKS",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "localized.my.bookshop.Books"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "title": {
+          "@Core.Computed": true,
+          "@cds.persistence.name": "TITLE",
+          "localized": true,
+          "type": "cds.String"
+        },
+        "author": {
+          "@cds.persistence.name": "AUTHOR",
+          "type": "cds.Association",
+          "target": "localized.my.bookshop.Authors",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ],
+              "$generatedFieldName": "author_ID"
+            }
+          ]
+        },
+        "stock": {
+          "@cds.persistence.name": "STOCK",
+          "type": "cds.Integer"
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "my.bookshop.Books_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "ID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "my.bookshop.Books_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "ID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ID"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        },
+        "author_ID": {
+          "@cds.persistence.name": "AUTHOR_ID",
+          "@odata.foreignKey4": "author",
+          "type": "cds.Integer"
+        }
+      }
+    },
+    "localized.CatalogService.Countries": {
+      "kind": "entity",
+      "@UI.Identification": [
+        {
+          "=": "name"
+        }
+      ],
+      "@cds.autoexpose": true,
+      "@cds.odata.valuelist": true,
+      "@cds.persistence.name": "LOCALIZED_CATALOGSERVICE_COUNTRIES",
+      "@cds.persistence.skip": "if-unused",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "localized.sap.common.Countries"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@Core.Computed": true,
+          "@cds.persistence.name": "NAME",
+          "localized": true,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@Core.Computed": true,
+          "@cds.persistence.name": "DESCR",
+          "localized": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 3
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "sap.common.Countries_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "sap.common.Countries_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "localized.my.bookshop.Authors": {
+      "kind": "entity",
+      "@cds.persistence.name": "LOCALIZED_MY_BOOKSHOP_AUTHORS",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "my.bookshop.Authors"
+            ],
+            "as": "L"
+          },
+          "columns": [
+            "*",
+            {
+              "ref": [
+                "books"
+              ],
+              "as": "books",
+              "cast": {
+                "target": "localized.my.bookshop.Books"
+              }
+            }
+          ]
+        }
+      },
+      "elements": {
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "name": {
+          "@cds.persistence.name": "NAME",
+          "type": "cds.String"
+        },
+        "books": {
+          "@cds.persistence.name": "BOOKS",
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "localized.my.bookshop.Books",
+          "on": [
+            {
+              "ref": [
+                "books",
+                "author"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "localized.my.bookshop.Books": {
+      "kind": "entity",
+      "@cds.persistence.name": "LOCALIZED_MY_BOOKSHOP_BOOKS",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "my.bookshop.Books"
+            ],
+            "as": "L"
+          },
+          "columns": [
+            "*",
+            {
+              "func": "coalesce",
+              "args": [
+                {
+                  "ref": [
+                    "L",
+                    "localized",
+                    "title"
+                  ]
+                },
+                {
+                  "ref": [
+                    "L",
+                    "title"
+                  ]
+                }
+              ],
+              "as": "title"
+            },
+            {
+              "ref": [
+                "author"
+              ],
+              "as": "author",
+              "cast": {
+                "target": "localized.my.bookshop.Authors"
+              }
+            }
+          ]
+        }
+      },
+      "elements": {
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "title": {
+          "@Core.Computed": true,
+          "@cds.persistence.name": "TITLE",
+          "localized": true,
+          "type": "cds.String"
+        },
+        "author": {
+          "@cds.persistence.name": "AUTHOR",
+          "type": "cds.Association",
+          "target": "localized.my.bookshop.Authors",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ],
+              "$generatedFieldName": "author_ID"
+            }
+          ]
+        },
+        "stock": {
+          "@cds.persistence.name": "STOCK",
+          "type": "cds.Integer"
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "my.bookshop.Books_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "ID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "my.bookshop.Books_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "ID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ID"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        },
+        "author_ID": {
+          "@cds.persistence.name": "AUTHOR_ID",
+          "@odata.foreignKey4": "author",
+          "type": "cds.Integer"
+        }
+      }
+    },
+    "localized.my.bookshop.Orders": {
+      "kind": "entity",
+      "@cds.persistence.name": "LOCALIZED_MY_BOOKSHOP_ORDERS",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "my.bookshop.Orders"
+            ],
+            "as": "L"
+          },
+          "columns": [
+            "*",
+            {
+              "ref": [
+                "book"
+              ],
+              "as": "book",
+              "cast": {
+                "target": "localized.my.bookshop.Books"
+              }
+            },
+            {
+              "ref": [
+                "country"
+              ],
+              "as": "country",
+              "cast": {
+                "type": "cds.Association",
+                "target": "localized.sap.common.Countries"
+              }
+            }
+          ]
+        }
+      },
+      "elements": {
+        "modifiedAt": {
+          "@Common.Label": "{i18n>ChangedAt}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.update": {
+            "=": "$now"
+          },
+          "@cds.persistence.name": "MODIFIEDAT",
+          "@odata.etag": true,
+          "@odata.on.update": {
+            "#": "now"
+          },
+          "type": "cds.DateTime"
+        },
+        "createdAt": {
+          "@Common.Label": "{i18n>CreatedAt}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.insert": {
+            "=": "$now"
+          },
+          "@cds.persistence.name": "CREATEDAT",
+          "@odata.on.insert": {
+            "#": "now"
+          },
+          "type": "cds.DateTime"
+        },
+        "createdBy": {
+          "@Common.Label": "{i18n>CreatedBy}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.insert": {
+            "=": "$user"
+          },
+          "@cds.persistence.name": "CREATEDBY",
+          "@description": "{i18n>UserID.Description}",
+          "@odata.on.insert": {
+            "#": "user"
+          },
+          "type": "cds.String",
+          "length": 255
+        },
+        "modifiedBy": {
+          "@Common.Label": "{i18n>ChangedBy}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.update": {
+            "=": "$user"
+          },
+          "@cds.persistence.name": "MODIFIEDBY",
+          "@description": "{i18n>UserID.Description}",
+          "@odata.on.update": {
+            "#": "user"
+          },
+          "type": "cds.String",
+          "length": 255
+        },
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "book": {
+          "@cds.persistence.name": "BOOK",
+          "type": "cds.Association",
+          "target": "localized.my.bookshop.Books",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ],
+              "$generatedFieldName": "book_ID"
+            }
+          ]
+        },
+        "country": {
+          "@Common.Label": "{i18n>Country}",
+          "@cds.persistence.name": "COUNTRY",
+          "@description": "{i18n>CountryCode.Description}",
+          "type": "cds.Association",
+          "target": "localized.sap.common.Countries",
+          "keys": [
+            {
+              "ref": [
+                "code"
+              ],
+              "$generatedFieldName": "country_code"
+            }
+          ]
+        },
+        "amount": {
+          "@cds.persistence.name": "AMOUNT",
+          "type": "cds.Integer"
+        },
+        "book_ID": {
+          "@cds.persistence.name": "BOOK_ID",
+          "@odata.foreignKey4": "book",
+          "type": "cds.Integer"
+        },
+        "country_code": {
+          "@Common.Label": "{i18n>Country}",
+          "@cds.persistence.name": "COUNTRY_CODE",
+          "@description": "{i18n>CountryCode.Description}",
+          "@odata.foreignKey4": "country",
+          "type": "cds.String",
+          "length": 3
+        }
+      }
+    },
+    "localized.sap.common.Countries": {
+      "kind": "entity",
+      "@UI.Identification": [
+        {
+          "=": "name"
+        }
+      ],
+      "@cds.autoexpose": true,
+      "@cds.odata.valuelist": true,
+      "@cds.persistence.name": "LOCALIZED_SAP_COMMON_COUNTRIES",
+      "@cds.persistence.skip": "if-unused",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "sap.common.Countries"
+            ],
+            "as": "L"
+          },
+          "columns": [
+            "*",
+            {
+              "func": "coalesce",
+              "args": [
+                {
+                  "ref": [
+                    "L",
+                    "localized",
+                    "name"
+                  ]
+                },
+                {
+                  "ref": [
+                    "L",
+                    "name"
+                  ]
+                }
+              ],
+              "as": "name"
+            },
+            {
+              "func": "coalesce",
+              "args": [
+                {
+                  "ref": [
+                    "L",
+                    "localized",
+                    "descr"
+                  ]
+                },
+                {
+                  "ref": [
+                    "L",
+                    "descr"
+                  ]
+                }
+              ],
+              "as": "descr"
+            }
+          ]
+        }
+      },
+      "elements": {
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@Core.Computed": true,
+          "@cds.persistence.name": "NAME",
+          "localized": true,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@Core.Computed": true,
+          "@cds.persistence.name": "DESCR",
+          "localized": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 3
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "sap.common.Countries_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "sap.common.Countries_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "localized.sap.common.Currencies": {
+      "kind": "entity",
+      "@UI.Identification": [
+        {
+          "=": "name"
+        }
+      ],
+      "@cds.autoexpose": true,
+      "@cds.odata.valuelist": true,
+      "@cds.persistence.name": "LOCALIZED_SAP_COMMON_CURRENCIES",
+      "@cds.persistence.skip": "if-unused",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "sap.common.Currencies"
+            ],
+            "as": "L"
+          },
+          "columns": [
+            "*",
+            {
+              "func": "coalesce",
+              "args": [
+                {
+                  "ref": [
+                    "L",
+                    "localized",
+                    "name"
+                  ]
+                },
+                {
+                  "ref": [
+                    "L",
+                    "name"
+                  ]
+                }
+              ],
+              "as": "name"
+            },
+            {
+              "func": "coalesce",
+              "args": [
+                {
+                  "ref": [
+                    "L",
+                    "localized",
+                    "descr"
+                  ]
+                },
+                {
+                  "ref": [
+                    "L",
+                    "descr"
+                  ]
+                }
+              ],
+              "as": "descr"
+            }
+          ]
+        }
+      },
+      "elements": {
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@Core.Computed": true,
+          "@cds.persistence.name": "NAME",
+          "localized": true,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@Core.Computed": true,
+          "@cds.persistence.name": "DESCR",
+          "localized": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 3
+        },
+        "symbol": {
+          "@cds.persistence.name": "SYMBOL",
+          "type": "cds.String",
+          "length": 2
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "sap.common.Currencies_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "sap.common.Currencies_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "localized.sap.common.Languages": {
+      "kind": "entity",
+      "@UI.Identification": [
+        {
+          "=": "name"
+        }
+      ],
+      "@cds.autoexpose": true,
+      "@cds.odata.valuelist": true,
+      "@cds.persistence.name": "LOCALIZED_SAP_COMMON_LANGUAGES",
+      "@cds.persistence.skip": "if-unused",
+      "@odata.draft.enabled": false,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "sap.common.Languages"
+            ],
+            "as": "L"
+          },
+          "columns": [
+            "*",
+            {
+              "func": "coalesce",
+              "args": [
+                {
+                  "ref": [
+                    "L",
+                    "localized",
+                    "name"
+                  ]
+                },
+                {
+                  "ref": [
+                    "L",
+                    "name"
+                  ]
+                }
+              ],
+              "as": "name"
+            },
+            {
+              "func": "coalesce",
+              "args": [
+                {
+                  "ref": [
+                    "L",
+                    "localized",
+                    "descr"
+                  ]
+                },
+                {
+                  "ref": [
+                    "L",
+                    "descr"
+                  ]
+                }
+              ],
+              "as": "descr"
+            }
+          ]
+        }
+      },
+      "elements": {
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@Core.Computed": true,
+          "@cds.persistence.name": "NAME",
+          "localized": true,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@Core.Computed": true,
+          "@cds.persistence.name": "DESCR",
+          "localized": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "sap.common.Languages_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "sap.common.Languages_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "managed": {
+      "kind": "type",
+      "@cds.persistence.name": "MANAGED",
+      "elements": {
+        "modifiedAt": {
+          "@Common.Label": "{i18n>ChangedAt}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.update": {
+            "=": "$now"
+          },
+          "@cds.persistence.name": "MODIFIEDAT",
+          "@odata.etag": true,
+          "@odata.on.update": {
+            "#": "now"
+          },
+          "type": "cds.DateTime"
+        },
+        "createdAt": {
+          "@Common.Label": "{i18n>CreatedAt}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.insert": {
+            "=": "$now"
+          },
+          "@cds.persistence.name": "CREATEDAT",
+          "@odata.on.insert": {
+            "#": "now"
+          },
+          "type": "cds.DateTime"
+        },
+        "createdBy": {
+          "@Common.Label": "{i18n>CreatedBy}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.insert": {
+            "=": "$user"
+          },
+          "@cds.persistence.name": "CREATEDBY",
+          "@description": "{i18n>UserID.Description}",
+          "@odata.on.insert": {
+            "#": "user"
+          },
+          "type": "cds.String",
+          "length": 255
+        },
+        "modifiedBy": {
+          "@Common.Label": "{i18n>ChangedBy}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.update": {
+            "=": "$user"
+          },
+          "@cds.persistence.name": "MODIFIEDBY",
+          "@description": "{i18n>UserID.Description}",
+          "@odata.on.update": {
+            "#": "user"
+          },
+          "type": "cds.String",
+          "length": 255
+        }
+      }
+    },
+    "my.bookshop.Authors": {
+      "kind": "entity",
+      "@cds.persistence.name": "MY_BOOKSHOP_AUTHORS",
+      "elements": {
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "name": {
+          "@cds.persistence.name": "NAME",
+          "type": "cds.String"
+        },
+        "books": {
+          "@cds.persistence.name": "BOOKS",
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "my.bookshop.Books",
+          "on": [
+            {
+              "ref": [
+                "books",
+                "author"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "my.bookshop.Books": {
+      "kind": "entity",
+      "@cds.persistence.name": "MY_BOOKSHOP_BOOKS",
+      "elements": {
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "title": {
+          "@cds.persistence.name": "TITLE",
+          "localized": true,
+          "type": "cds.String"
+        },
+        "author": {
+          "@cds.persistence.name": "AUTHOR",
+          "type": "cds.Association",
+          "target": "my.bookshop.Authors",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ],
+              "$generatedFieldName": "author_ID"
+            }
+          ]
+        },
+        "stock": {
+          "@cds.persistence.name": "STOCK",
+          "type": "cds.Integer"
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "my.bookshop.Books_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "ID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "my.bookshop.Books_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "ID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "ID"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        },
+        "author_ID": {
+          "@cds.persistence.name": "AUTHOR_ID",
+          "@odata.foreignKey4": "author",
+          "type": "cds.Integer"
+        }
+      }
+    },
+    "my.bookshop.Books_texts": {
+      "kind": "entity",
+      "@cds.autoexpose": true,
+      "@cds.persistence.name": "MY_BOOKSHOP_BOOKS_TEXTS",
+      "@odata.draft.enabled": false,
+      "elements": {
+        "locale": {
+          "@cds.persistence.name": "LOCALE",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "title": {
+          "@cds.persistence.name": "TITLE",
+          "localized": false,
+          "type": "cds.String"
+        }
+      }
+    },
+    "my.bookshop.Orders": {
+      "kind": "entity",
+      "@cds.persistence.name": "MY_BOOKSHOP_ORDERS",
+      "includes": [
+        "managed"
+      ],
+      "elements": {
+        "modifiedAt": {
+          "@Common.Label": "{i18n>ChangedAt}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.update": {
+            "=": "$now"
+          },
+          "@cds.persistence.name": "MODIFIEDAT",
+          "@odata.etag": true,
+          "@odata.on.update": {
+            "#": "now"
+          },
+          "type": "cds.DateTime"
+        },
+        "createdAt": {
+          "@Common.Label": "{i18n>CreatedAt}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.insert": {
+            "=": "$now"
+          },
+          "@cds.persistence.name": "CREATEDAT",
+          "@odata.on.insert": {
+            "#": "now"
+          },
+          "type": "cds.DateTime"
+        },
+        "createdBy": {
+          "@Common.Label": "{i18n>CreatedBy}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.insert": {
+            "=": "$user"
+          },
+          "@cds.persistence.name": "CREATEDBY",
+          "@description": "{i18n>UserID.Description}",
+          "@odata.on.insert": {
+            "#": "user"
+          },
+          "type": "cds.String",
+          "length": 255
+        },
+        "modifiedBy": {
+          "@Common.Label": "{i18n>ChangedBy}",
+          "@Core.Computed": true,
+          "@Core.Immutable": true,
+          "@UI.HiddenFilter": true,
+          "@cds.on.update": {
+            "=": "$user"
+          },
+          "@cds.persistence.name": "MODIFIEDBY",
+          "@description": "{i18n>UserID.Description}",
+          "@odata.on.update": {
+            "#": "user"
+          },
+          "type": "cds.String",
+          "length": 255
+        },
+        "ID": {
+          "@cds.persistence.name": "ID",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "book": {
+          "@cds.persistence.name": "BOOK",
+          "type": "cds.Association",
+          "target": "my.bookshop.Books",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ],
+              "$generatedFieldName": "book_ID"
+            }
+          ]
+        },
+        "country": {
+          "@Common.Label": "{i18n>Country}",
+          "@cds.persistence.name": "COUNTRY",
+          "@description": "{i18n>CountryCode.Description}",
+          "type": "cds.Association",
+          "target": "sap.common.Countries",
+          "keys": [
+            {
+              "ref": [
+                "code"
+              ],
+              "$generatedFieldName": "country_code"
+            }
+          ]
+        },
+        "amount": {
+          "@cds.persistence.name": "AMOUNT",
+          "type": "cds.Integer"
+        },
+        "book_ID": {
+          "@cds.persistence.name": "BOOK_ID",
+          "@odata.foreignKey4": "book",
+          "type": "cds.Integer"
+        },
+        "country_code": {
+          "@Common.Label": "{i18n>Country}",
+          "@cds.persistence.name": "COUNTRY_CODE",
+          "@description": "{i18n>CountryCode.Description}",
+          "@odata.foreignKey4": "country",
+          "type": "cds.String",
+          "length": 3
+        }
+      }
+    },
+    "sap.common": {
+      "kind": "context"
+    },
+    "sap.common.CodeList": {
+      "kind": "type",
+      "@UI.Identification": [
+        {
+          "=": "name"
+        }
+      ],
+      "@cds.autoexpose": true,
+      "@cds.odata.valuelist": true,
+      "@cds.persistence.name": "SAP_COMMON_CODELIST",
+      "@cds.persistence.skip": "if-unused",
+      "elements": {
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@cds.persistence.name": "NAME",
+          "localized": true,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@cds.persistence.name": "DESCR",
+          "localized": true,
+          "type": "cds.String",
+          "length": 1000
+        }
+      }
+    },
+    "sap.common.Countries": {
+      "kind": "entity",
+      "@UI.Identification": [
+        {
+          "=": "name"
+        }
+      ],
+      "@cds.autoexpose": true,
+      "@cds.odata.valuelist": true,
+      "@cds.persistence.name": "SAP_COMMON_COUNTRIES",
+      "@cds.persistence.skip": "if-unused",
+      "includes": [
+        "sap.common.CodeList"
+      ],
+      "elements": {
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@cds.persistence.name": "NAME",
+          "localized": true,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@cds.persistence.name": "DESCR",
+          "localized": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 3
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "sap.common.Countries_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "sap.common.Countries_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "sap.common.Countries_texts": {
+      "kind": "entity",
+      "@cds.autoexpose": true,
+      "@cds.persistence.name": "SAP_COMMON_COUNTRIES_TEXTS",
+      "@odata.draft.enabled": false,
+      "elements": {
+        "locale": {
+          "@cds.persistence.name": "LOCALE",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@cds.persistence.name": "NAME",
+          "localized": false,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@cds.persistence.name": "DESCR",
+          "localized": false,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 3
+        }
+      }
+    },
+    "sap.common.Currencies": {
+      "kind": "entity",
+      "@UI.Identification": [
+        {
+          "=": "name"
+        }
+      ],
+      "@cds.autoexpose": true,
+      "@cds.odata.valuelist": true,
+      "@cds.persistence.name": "SAP_COMMON_CURRENCIES",
+      "@cds.persistence.skip": "if-unused",
+      "includes": [
+        "sap.common.CodeList"
+      ],
+      "elements": {
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@cds.persistence.name": "NAME",
+          "localized": true,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@cds.persistence.name": "DESCR",
+          "localized": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 3
+        },
+        "symbol": {
+          "@cds.persistence.name": "SYMBOL",
+          "type": "cds.String",
+          "length": 2
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "sap.common.Currencies_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "sap.common.Currencies_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "sap.common.Currencies_texts": {
+      "kind": "entity",
+      "@cds.autoexpose": true,
+      "@cds.persistence.name": "SAP_COMMON_CURRENCIES_TEXTS",
+      "@odata.draft.enabled": false,
+      "elements": {
+        "locale": {
+          "@cds.persistence.name": "LOCALE",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@cds.persistence.name": "NAME",
+          "localized": false,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@cds.persistence.name": "DESCR",
+          "localized": false,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 3
+        }
+      }
+    },
+    "sap.common.Languages": {
+      "kind": "entity",
+      "@UI.Identification": [
+        {
+          "=": "name"
+        }
+      ],
+      "@cds.autoexpose": true,
+      "@cds.odata.valuelist": true,
+      "@cds.persistence.name": "SAP_COMMON_LANGUAGES",
+      "@cds.persistence.skip": "if-unused",
+      "includes": [
+        "sap.common.CodeList"
+      ],
+      "elements": {
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@cds.persistence.name": "NAME",
+          "localized": true,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@cds.persistence.name": "DESCR",
+          "localized": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "texts": {
+          "@cds.persistence.name": "TEXTS",
+          "type": "cds.Composition",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "sap.common.Languages_texts",
+          "on": [
+            {
+              "ref": [
+                "texts",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            }
+          ]
+        },
+        "localized": {
+          "@cds.persistence.name": "LOCALIZED",
+          "type": "cds.Association",
+          "target": "sap.common.Languages_texts",
+          "on": [
+            {
+              "ref": [
+                "localized",
+                "code"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "code"
+              ]
+            },
+            "and",
+            {
+              "ref": [
+                "localized",
+                "locale"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$user",
+                "locale"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "sap.common.Languages_texts": {
+      "kind": "entity",
+      "@cds.autoexpose": true,
+      "@cds.persistence.name": "SAP_COMMON_LANGUAGES_TEXTS",
+      "@odata.draft.enabled": false,
+      "elements": {
+        "locale": {
+          "@cds.persistence.name": "LOCALE",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "name": {
+          "@Common.Label": "{i18n>Name}",
+          "@cds.persistence.name": "NAME",
+          "localized": false,
+          "type": "cds.String",
+          "length": 255
+        },
+        "descr": {
+          "@Common.Label": "{i18n>Description}",
+          "@cds.persistence.name": "DESCR",
+          "localized": false,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "code": {
+          "@cds.persistence.name": "CODE",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        }
+      }
+    },
+    "temporal": {
+      "kind": "type",
+      "@cds.persistence.name": "TEMPORAL",
+      "elements": {
+        "validFrom": {
+          "@cds.persistence.name": "VALIDFROM",
+          "@cds.valid.from": true,
+          "type": "cds.DateTime"
+        },
+        "validTo": {
+          "@cds.persistence.name": "VALIDTO",
+          "@cds.valid.to": true,
+          "type": "cds.DateTime"
+        }
+      }
+    }
+  },
+  "version": {
+    "csn": "1.0"
+  },
+  "meta": {
+    "creator": "CDS Compiler v1.15.0"
+  },
+  "$version": "1.0",
+  "@sql_mapping": "plain"
+}
