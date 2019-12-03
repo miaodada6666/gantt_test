@@ -97,6 +97,14 @@
 		"contentDensities": {
 			"compact": true,
 			"cozy": true
+		},
+		"routing": {
+			"targets": {
+				"gantt": {
+					"viewType": "XML",
+					"viewName": "gantt"
+				}
+			}
 		}
 	},
 	"sap.ui.generic.app": {
