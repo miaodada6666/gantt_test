@@ -262,6 +262,7 @@
 						</Record>
 						<Record Type="UI.DataField">
 							<PropertyValue Property="Value" Path="PlannedStartDate"/>
+							
 							<PropertyValue Property="Label" String="{@i18n&gt;PLAN_START_DATE}"/>
 						</Record>
 						<Record Type="UI.DataField">
