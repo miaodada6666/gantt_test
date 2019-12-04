@@ -18,7 +18,16 @@
 				"type": "OData",
 				"settings": {
 					"localUri": "localService/metadata.xml",
-					"annotations": []
+					"annotations": [
+						"annotation0"
+					]
+				}
+			},
+			"annotation0": {
+				"type": "ODataAnnotation",
+				"uri": "../app_EE/webapp/localService/view/annotation0.xml",
+				"settings": {
+					"localUri": "../app_EE/webapp/localService/view/annotation0.xml"
 				}
 			}
 		},
@@ -89,6 +98,10 @@
 					"defaultCountMode": "Inline",
 					"refreshAfterChange": false
 				}
+			},
+			"i18n|sap.suite.ui.generic.template.ObjectPage|Books_texts": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/ObjectPage/Books_texts/i18n.properties"
 			}
 		},
 		"extends": {
@@ -131,6 +144,15 @@
 						"entitySet": "Books",
 						"component": {
 							"name": "sap.suite.ui.generic.template.ObjectPage"
+						},
+						"pages": {
+							"ObjectPage|texts": {
+								"entitySet": "Books_texts",
+								"component": {
+									"name": "sap.suite.ui.generic.template.ObjectPage"
+								},
+								"navigationProperty": "texts"
+							}
 						}
 					}
 				}
