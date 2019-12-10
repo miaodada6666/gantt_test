@@ -34,7 +34,8 @@
 					
 			     	<table:Column id="comoboxColumn" label="Dependence" width="220px">
 						<table:template>
-		   		<ComboBox xmlns="sap.m" id="box8">
+		   		    <ComboBox xmlns="sap.m" id="box8">
+					   
 	                    <items>
 	                    <!--<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="{test>children/1/name}" id="item14"/>-->
 	                    <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="{test>/root/children/0/name}" id="item14"/>
