@@ -6,9 +6,7 @@
 			<GanttChartWithTable id="ganttView" shapeDragEnd="handleShapeDragEnd">
 				<columns>
 					<table:Column id="nameColumn" label="Name" width="320px">
-						<!--<table:template>-->
-						<!--		<m:Label text="{test>name}"/>-->
-						<!--</table:template>-->
+			
 						<table:template>
 		   	            <TextArea xmlns="sap.m" value="{test>name}" rows="1" id="area2"/>
 						</table:template>
